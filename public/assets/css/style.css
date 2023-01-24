@@ -52,7 +52,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #333;
+  border: 6px solid #63633D;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -539,6 +539,7 @@ section {
 
 .section-title {
   text-align: center;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .section-title h2 {
@@ -575,6 +576,7 @@ section {
 
 .section-title p {
   margin-bottom: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -995,11 +997,10 @@ section {
   opacity: 0;
   position: absolute;
   left: 15px;
-  bottom: 0;
+  top: 0;
   z-index: 3;
   right: 15px;
   transition: all 0.3s;
-  background: rgba(55, 81, 126, 0.8);
   padding: 10px 15px;
 }
 
@@ -1009,12 +1010,11 @@ section {
   font-weight: 600;
   color: #fff;
   margin-bottom: 0px;
+  font-family: 'Kanit', sans-serif;
 }
 
-.portfolio .portfolio-item .portfolio-info p {
-  color: #f9fcfe;
-  font-size: 14px;
-  margin-bottom: 0;
+.portfolio .portfolio-item .portfolio-info h2 {
+  font-family: 'Kanit', sans-serif;
 }
 
 .portfolio .portfolio-item .portfolio-info .preview-link,
@@ -1022,7 +1022,6 @@ section {
   position: absolute;
   right: 40px;
   font-size: 24px;
-  top: calc(50% - 18px);
   color: #fff;
   transition: 0.3s;
 }
@@ -1419,8 +1418,7 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact .info {
-  border-top: 3px solid #47b2e4;
-  border-bottom: 3px solid #47b2e4;
+  font-family: 'IBM Plex Sans', sans-serif;
   padding: 30px;
   background: #fff;
   width: 100%;
@@ -1429,11 +1427,11 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #47b2e4;
+  color: #63633D;
   float: left;
   width: 44px;
   height: 44px;
-  background: #e7f5fb;
+  background: #f2f2ee;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1442,21 +1440,24 @@ section {
 }
 
 .contact .info h4 {
+  font-family: 'IBM Plex Sans', sans-serif;
   padding: 0 0 0 60px;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #37517e;
+  color: #63633D;
 }
 
 .contact .info p {
+  font-family: 'IBM Plex Sans', sans-serif;
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #6182ba;
+  color: #63633D;
 }
 
 .contact .info .email p {
+  font-family: 'IBM Plex Sans', sans-serif;
   padding-top: 5px;
 }
 
@@ -1480,120 +1481,15 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #47b2e4;
+  background: #63633D;
   color: #fff;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #47b2e4;
-  color: #fff;
-}
-
-.contact .php-email-form {
-  width: 100%;
-  border-top: 3px solid #47b2e4;
-  border-bottom: 3px solid #47b2e4;
-  padding: 30px;
-  background: #fff;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-}
-
-.contact .php-email-form .form-group {
-  padding-bottom: 8px;
-}
-
-.contact .php-email-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br+br {
-  margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form .form-group {
-  margin-bottom: 20px;
-}
-
-.contact .php-email-form label {
-  padding-bottom: 8px;
-}
-
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-  border-radius: 4px;
-}
-
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
-  border-color: #47b2e4;
-}
-
-.contact .php-email-form input {
-  height: 44px;
-}
-
-.contact .php-email-form textarea {
-  padding: 10px 12px;
-}
-
-.contact .php-email-form button[type=submit] {
-  background: #47b2e4;
-  border: 0;
-  padding: 12px 34px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 50px;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: #209dd8;
+  background: #63633D;
+  color: #f2f2ee;
 }
 
 @-webkit-keyframes animate-loading {
